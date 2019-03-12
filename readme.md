@@ -1,27 +1,48 @@
-# Laravel PHP Framework
+**TESTE PHP ESTRUTURADO**
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+Recursos:
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+- Módulos
+- Atividades
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+Para utilização dos recursos de Módulos:
 
-## Official Documentation
+Deve-se utilizar a barra de navegação superior para ir ao recurso de módulos, nela será exibida uma listagem dos módulos
+criados, caso exista algum.
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+Para a criação de um novo módulo é necessario estar na pagina onde há a listagem de módulos e clicar no botão Cadastar 
+módulo, então será exibido o formuládo para cadastrar um novo módulo, onde devem ser obrigatóriamente preenchidos o 
+título e a descrição para este novo módulo, além de se ter opção de deixar o mesmo com o status ativado ou desativado, ao
+clicar no botão de cadastro, um novo resistro é criado no banco de dados e feito o redirecionamento para a listagem de 
+módulos.
 
-## Contributing
+Uma vez havendo registros para serem exibidos na tela de listagem, é possível editar e excluir o mesmo.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+Clicando no icone para editar, é exibida um formulário para edição do título, descrição e status do módulo, ao clicar no
+botão Atualizar, o registro do módulo é atualizado, tendo a data e hora da atualização exibida na tela de listagem de 
+módulos.
 
-## Security Vulnerabilities
+Ao clicar no botão para deletar, o registro é removido do banco de dados e exibida a tela de listagem de módulos já sem 
+o registro deletado.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+A utilização do recurso de atividades ocorre de maneira bem semelhante, para utilização dos recursos de Atividades:
 
-## License
+Deve-se utilizar a barra de navegação superior para ir ao recurso de atividades, nela será exibida uma listagem das 
+atividades criadas, caso exista alguma.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+Para a criação de uma nova atividades é necessario estar na pagina onde há a listagem de atividades e clicar no botão 
+Cadastar atividade, então será exibido o formuládo para cadastrar uma nova atividade, onde devem ser obrigatóriamente 
+preenchidos o módulo(este deve ser préviamente criado), título e a descrição para esta nova atividade, além de se ter 
+opção de deixar o mesmo com o status ativado ou desativado, ao clicar no botão de cadastro, um novo resistro é criado no 
+banco de dados e feito o redirecionamento para a listagem de atividades.
+
+Uma vez havendo registros para serem exibidos na tela de listagem, é possível editar e excluir o mesmo.
+
+Clicando no icone para editar, é exibida um formulário para edição do módulo, título, descrição e status da atividade, 
+ao clicar no botão Atualizar, o registro da atividades é atualizada, tendo a data e hora da atualização exibida na tela 
+de listagem de atividades.
+
+Ao clicar no botão para deletar, o registro é removido do banco de dados e exibida a tela de listagem de atividades já 
+sem o registro deletado.
+
+ 
