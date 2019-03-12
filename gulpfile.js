@@ -1,5 +1,13 @@
 var elixir = require('laravel-elixir');
 
+var gulp = require('gulp'),
+    sass = require('gulp-sass'),
+    cssnano = require('gulp-cssnano'),
+    uglify = require('gulp-uglify'),
+    rename = require('gulp-rename'),
+    concat = require('gulp-concat'),
+    notify = require('gulp-notify');
+
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management
@@ -16,12 +24,19 @@ elixir(function(mix) {
 
         .styles([
         'all.css',
-        'bootstrap.ccs',
+        'bootstrap.css',
         'fontawesome.css'
-    ], '.public/css/libs.css')
+    ], './public/css/libs.css')
 
         .scripts([
             'jquery-3.3.1.js',
             'bootstrap.js'
-        ], '.public/js/libs.js')
+        ], './public/js/libs.js')
+
+
+});
+
+gulp.task('icons', function() {
+    return gulp.src('node_modules/@fontawesome/fontawesome-free/webfonts/*')
+        .pipe(gulp.dest(dist+'/assets/webfonts/'));
 });

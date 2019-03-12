@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use App\Http\Requests\Request;
 
-class ModuloRequest extends Request
+class AtividadeRequest extends Request
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,6 +24,7 @@ class ModuloRequest extends Request
     public function rules()
     {
         return [
+            "id_do_modulo" => "required",
             "titulo" => "required",
             "descricao" => "required"
         ];

@@ -20,7 +20,7 @@ class CreateModulosTable extends Migration
             $table->string('titulo');
             $table->string('descricao');
             $table->timestamp('data_de_cadastro')->useCurrent();
-            $table->timestamp('data_de_alteracao')->nullableTimestamps();
+            $table->timestamp('data_de_alteracao')->nullable();
             $table->boolean('status');
         });
     }
